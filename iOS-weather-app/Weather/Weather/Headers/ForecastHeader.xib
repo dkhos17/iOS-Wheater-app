@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ForecastHeader" customModule="Weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d1t-gi-sgO">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G29-Wg-O6g" userLabel="up-line">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="7mh-zI-whA"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week Day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tO1-vB-UaO">
+                            <rect key="frame" x="10" y="28.5" width="79.5" height="20.5"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTL-ff-hsJ" userLabel="down-line">
+                            <rect key="frame" x="0.0" y="76" width="414" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Nd9-N9-qwj"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAK-Qd-VGY" userLabel="left-line">
+                            <rect key="frame" x="0.0" y="0.0" width="1" height="77"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="ppj-9k-O0Q"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNJ-3s-f5P" userLabel="right-line">
+                            <rect key="frame" x="413" y="0.0" width="1" height="77"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="3bI-30-ZjT"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="JTL-ff-hsJ" firstAttribute="centerX" secondItem="d1t-gi-sgO" secondAttribute="centerX" id="0ax-ZI-gXD"/>
+                        <constraint firstItem="JTL-ff-hsJ" firstAttribute="width" secondItem="d1t-gi-sgO" secondAttribute="width" id="3RS-Rd-cD8"/>
+                        <constraint firstItem="G29-Wg-O6g" firstAttribute="centerX" secondItem="d1t-gi-sgO" secondAttribute="centerX" id="3oD-bP-z8n"/>
+                        <constraint firstItem="tO1-vB-UaO" firstAttribute="leading" secondItem="d1t-gi-sgO" secondAttribute="leading" constant="10" id="9xv-ln-APx"/>
+                        <constraint firstItem="tO1-vB-UaO" firstAttribute="centerY" secondItem="d1t-gi-sgO" secondAttribute="centerY" id="BwM-wb-gMU"/>
+                        <constraint firstItem="eAK-Qd-VGY" firstAttribute="leading" secondItem="d1t-gi-sgO" secondAttribute="leading" id="JJq-iI-IzT"/>
+                        <constraint firstAttribute="trailing" secondItem="oNJ-3s-f5P" secondAttribute="trailing" id="WhF-HC-Cbk"/>
+                        <constraint firstItem="G29-Wg-O6g" firstAttribute="width" secondItem="d1t-gi-sgO" secondAttribute="width" id="l7P-cl-hTJ"/>
+                        <constraint firstItem="eAK-Qd-VGY" firstAttribute="centerY" secondItem="d1t-gi-sgO" secondAttribute="centerY" id="le6-RH-glh"/>
+                        <constraint firstItem="G29-Wg-O6g" firstAttribute="top" secondItem="d1t-gi-sgO" secondAttribute="top" id="ltM-f9-Pod"/>
+                        <constraint firstItem="oNJ-3s-f5P" firstAttribute="centerY" secondItem="d1t-gi-sgO" secondAttribute="centerY" id="mV1-Be-t8X"/>
+                        <constraint firstItem="JTL-ff-hsJ" firstAttribute="baseline" secondItem="d1t-gi-sgO" secondAttribute="bottom" id="nLm-pk-jox"/>
+                        <constraint firstItem="eAK-Qd-VGY" firstAttribute="height" secondItem="d1t-gi-sgO" secondAttribute="height" id="ozi-wS-XtV"/>
+                        <constraint firstItem="oNJ-3s-f5P" firstAttribute="height" secondItem="d1t-gi-sgO" secondAttribute="height" id="uJ2-X8-f40"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="d1t-gi-sgO" firstAttribute="height" secondItem="vUN-kp-3ea" secondAttribute="height" id="5Ep-xd-RcN"/>
+                <constraint firstItem="d1t-gi-sgO" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="SQt-R8-NHc"/>
+                <constraint firstItem="d1t-gi-sgO" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="d5M-hZ-PI2"/>
+                <constraint firstItem="d1t-gi-sgO" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" id="z3X-KA-TNo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="titleLabel" destination="tO1-vB-UaO" id="55A-wM-b2y"/>
+            </connections>
+            <point key="canvasLocation" x="-142" y="-28"/>
+        </view>
+    </objects>
+</document>
